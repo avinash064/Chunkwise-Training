@@ -1,0 +1,33 @@
+# RF-DETR V2 Streaming Training Pipeline — Requirements
+# ========================================================
+
+# ── PyTorch (match your CUDA version) ────────────────────────────────────────
+torch>=2.1.0
+torchvision>=0.16.0
+
+# ── RF-DETR ───────────────────────────────────────────────────────────────────
+# pip install rfdetr
+# or: pip install git+https://github.com/roboflow/rf-detr.git
+
+# ── Streaming JSON ────────────────────────────────────────────────────────────
+ijson>=3.2.3           # streaming parser; install yajl backend for 2x speed:
+                       #   apt-get install libyajl-dev
+msgpack>=1.0.5         # compact polygon encoding (~4x smaller than json)
+
+# ── Image I/O ─────────────────────────────────────────────────────────────────
+opencv-python-headless>=4.8.0
+Pillow>=10.0.0
+
+# ── Numerics ──────────────────────────────────────────────────────────────────
+numpy>=1.24.0
+
+# ── System monitoring ─────────────────────────────────────────────────────────
+psutil>=5.9.0
+
+# ── Evaluation (optional but recommended) ─────────────────────────────────────
+pycocotools>=2.0.7     # COCO mAP evaluation
+
+# ── Install order ─────────────────────────────────────────────────────────────
+# pip install torch torchvision --index-url https://download.pytorch.org/whl/cu121
+# pip install rfdetr
+# pip install -r requirements.txt
