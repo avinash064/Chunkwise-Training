@@ -10,7 +10,7 @@
 WHAT WAS THE PROBLEM?
 ════════════════════════════════════════════════════════════════════════════════
 
-Your logs showed:
+our logs showed:
   "DummyCriterion ACTIVE — loss=1.0"
   "SetCriterion built via direct construction"
   "ALL criterion build paths failed"
