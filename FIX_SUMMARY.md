@@ -89,7 +89,7 @@ WHAT CHANGED IN model_wrapper.py?
 VERIFICATION (fix_criterion.py already proved this works)
 ════════════════════════════════════════════════════════════════════════════════
 
-From your logs:
+From our logs:
   
   ✓ HungarianMatcher params: {'cost_class': 2.0, 'cost_bbox': 5.0, 'cost_giou': 2.0}
   ✓ weight_dict: {'loss_ce': 1.0, 'loss_bbox': 5.0, 'loss_giou': 2.0, ...}
